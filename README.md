@@ -13,3 +13,7 @@ This repository holds unit tests for the **USDA FoodData Central API – Food Se
 params = {"api_key": API_KEY, "query": "cheddar cheese", "pageSize": 1}
 response = requests.get("[https://api.nal.usda.gov/fdc/v1/foods/search](https://api.nal.usda.gov/fdc/v1/foods/search)", params=params)
 data = response.json()
+
+## Wire diagram
+The USDA FoodData Central API search protocol acts as the initial data-fetching layer for retrieving nutritional profiles and food descriptions.
+![Workflow wire diagram](docs/wire_diagram.png)
